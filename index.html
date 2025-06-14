@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PT Elfam Rokan Abadi - Beranda</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">PT Elfam Rokan Abadi</div>
+    <nav>
+      <ul>
+        <li><a href="#">Beranda</a></li>
+        <li><a href="profil.html">Profil</a></li>
+        <li><a href="publikasi.html">Publikasi</a></li>
+        <li><a href="#">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero-slider">
+  <div class="slide active">
+    <img src="images/elfam1.jpeg" alt="Slide 1">
+  </div>
+  <div class="slide">
+    <img src="images/elfam2.jpeg" alt="Slide 2">
+  </div>
+  <div class="slide">
+    <img src="images/elfam3.jpeg" alt="Slide 3">
+  </div>
+  <div class="slide">
+    <img src="images/elfam4.jpeg" alt="Slide 4">
+  </div>
+  <div class="slide">
+    <img src="images/elfam5.jpeg" alt="Slide 5">
+  </div>
+  <div class="slide">
+    <img src="images/elfam6.jpeg" alt="Slide 6">
+  </div>
+  <div class="slide">
+    <img src="images/elfam7.jpeg" alt="Slide 7">
+  </div>
+  <!-- Lanjutkan sesuai jumlah foto -->
+</section>
+
+
+
+  <section class="berita">
+    <h2>Berita Terbaru</h2>
+    <div class="berita-item">📢 Berita 1: Informasi terbaru dari Elfam</div>
+    <div class="berita-item">📢 Berita 2: Kegiatan Elfam</div>
+    <div class="berita-item">📢 Berita 3: Laporan tahunan 2025</div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 PT Elfam Rokan Abadi. Hak Cipta Dilindungi.</p>
+  </footer>
+  <script>
+    let slides = document.querySelectorAll('.slide');
+    let currentSlide = 0;
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.remove('active');
+        if (i === index) slide.classList.add('active');
+      });
+    }
+
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % slides.length;
+      showSlide(currentSlide);
+    }
+
+    setInterval(nextSlide, 4000); // Ganti slide tiap 4 detik
+  </script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #125158;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero {
+  background: url('https://www.skkmigas.go.id/sites/default/files/styles/slider/public/slider-home/slide-skk.jpg') no-repeat center center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin: 0;
+}
+.hero-slider {
+  position: relative;
+  overflow: hidden;
+  height: 400px;
+}
+
+.hero-slider .slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.hero-slider .slide.active {
+  opacity: 1;
+}
+
+.hero-slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.berita {
+  padding: 40px 20px;
+  background-color: #f8f8f8;
+}
+
+.berita h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.berita-item {
+  background: white;
+  margin: 10px auto;
+  padding: 15px;
+  max-width: 600px;
+  border: 1px solid #ccc;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #333;
+  color: white;
+}
